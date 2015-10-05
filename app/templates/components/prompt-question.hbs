@@ -1,0 +1,9 @@
+{{#if currentQuestion}}
+  <h2>{{current-question currentQuestion}}</h2>
+  <button class="btn btn-danger" {{action 'nextQuestion'}}>
+    Yes >>
+  </button>
+{{else}}
+  <h4>LALALALALA</h4>
+  <!-- {{new-help}} -->
+{{/if}}
