@@ -16,6 +16,13 @@ export default Ember.Component.extend({
       var questions = this.get('questions');
       var next = questions.shift();
       this.set('currentQuestion', next);
+    },
+    saveTicket() {
+      var params = {
+        name: this.get('name'),
+        issue: this.get('issue')
+      };
+      this.sendAction('saveTicket', params);
     }
   }
 });

@@ -1,0 +1,24 @@
+{{#if currentQuestion}}
+  <h2>{{current-question currentQuestion}}</h2>
+  <button class="btn btn-danger" {{action 'nextQuestion'}}>
+    Yes >>
+  </button>
+{{else}}
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="name"></label>
+        {{input value=name id="name" placeholder="Please enter your name"}}
+      </div>
+
+      <div class="form-group">
+        <label for="issue"></label>
+        {{input value=issue id="issue" placeholder="Give a brief description of issue you are having."}}
+      </div>
+
+      <button class="btn btn-danger"{{action 'saveTicket'}}>
+        Help!
+      </button>
+    </form>
+  </div>
+{{/if}}
