@@ -1,0 +1,12 @@
+{{#if ticketExists}}
+  <h2>Thanks, {{ticket.name}}. Help is on the way.</h2>
+
+  <h5>Leave this page open while you continue working on the problem.</h5>
+
+  <button class="btn btn-danger" {{action 'deleteTicket' ticket}}>
+    Nevermind, we got it.
+  </button>
+
+{{else}}
+  <h2>Your ticket has been closed.</h2>
+{{/if}}
