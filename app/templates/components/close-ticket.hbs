@@ -1,0 +1,11 @@
+<div class="ticket">
+  <h2>{{ticket.name}}</h2>
+  <div class="ticket-detail">
+    <p>{{ticket.issue}}</p>
+  </div>
+
+  {{#link-to 'teacher'}}Back{{/link-to}}
+  <button class="btn btn-danger pull-right" {{action 'deleteTicket' ticket}}>
+    close
+  </button>
+</div>
