@@ -13,10 +13,20 @@ body {
     font-size: 30px;
 }
 
+#banner a {
+  text-decoration: none;
+  color: white;
+}
+
 .container {
   text-align: center;
   padding: 15px;
+  width: 100%;
+}
+
+.prompt {
   width: 50%;
+  margin: 0 auto;
 }
 
 h2 {
@@ -28,12 +38,13 @@ h2 {
 }
 
 a {
-  color: #ffffff;
+  text-decoration: none;
+  color: white;
 }
 
 a:hover {
   text-decoration: none;
-  color: #ffffff;
+  color: white;
 }
 
 input {
@@ -47,4 +58,11 @@ textarea {
 
 form {
   margin: 20px;
+}
+
+.ticket {
+  background-color: white;
+  border: 1px solid black;
+  text-align: left;
+  width:100%;
 }
