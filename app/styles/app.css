@@ -22,6 +22,7 @@ body {
   text-align: center;
   padding: 15px;
   width: 100%;
+  margin: 0px;
 }
 
 .prompt {
@@ -65,4 +66,10 @@ form {
   border: 1px solid black;
   text-align: left;
   width:100%;
+  margin: 0px;
+  padding: 15px;
+}
+
+.inline {
+  display: inline;
 }
