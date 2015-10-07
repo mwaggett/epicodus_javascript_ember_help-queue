@@ -21,7 +21,7 @@ export default Ember.Component.extend({
       var params = {
         name: this.get('name'),
         issue: this.get('issue'),
-        when_added: Date.now()
+        when_added: Date.now(),
       };
       this.sendAction('saveTicket', params);
     }
